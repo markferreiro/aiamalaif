@@ -1,0 +1,12 @@
+<div id="sidebar">
+  <ul id="users-list">
+    <li *ngFor="let u of users" id="u['id']" class="{u.status == 0 ? 'ok' : 'ko'}">
+      <div class="top-user-info">
+        <p class="user-name">{{u["name"]}}
+      </div>
+      <div class="bottom-user-info">
+        <p class="contatc-user-info">{{u["contact"]}}
+      </div>
+    </li>
+  </ul>
+</div>
